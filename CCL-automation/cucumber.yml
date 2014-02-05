@@ -1,0 +1,35 @@
+##
+# CISCO Collaborative Learning - Ruby Cucumber Automation
+#
+# Revision History:
+# -----------------
+# Creator Name  : Venu J, 12 Oct 2013
+# Modifier By   : <NAME>,<MODIFY DATE>,<REASON>
+#
+# @description
+# Cucumber lets you store and reuse commonly used cucumber command line arguments for a
+# project in a cucumber.yml or cucumber.yaml file. This file must be in your current working directory,
+# .config subdirectory config subdirectory of your current working directory.
+# 
+# @reference
+#  https://github.com/cucumber/cucumber/wiki/cucumber.yml
+#  https://makandracards.com/makandra/4971-how-to-organize-and-execute-cucumber-features-e-g-in-subdirectories
+##
+
+#login_logout_profile: -r features --dotcucumber features/.cucumber
+
+#sso_login_logout_profile: -r features --tags @sso_login,@logout --color --format pretty --format html -o cclom_cucumber_features_test_results.html
+#login_logout_profile: -r features --tags @login,@logout --color --format pretty --format html -o cclom_cucumber_features_test_results.html --dotcucumber features/.cucumber
+#,~@sso_login
+#default: DISPLAY=:99.0 HEADLESS=true --tags ~@not_completed --tags ~@skip --color --format pretty --format html -o report\ccl_features_test_results.html --dotcucumber features/.cucumber
+#default: --tags ~@not_completed,@skip --color --format pretty --format html -o ccl_features_test_results.html --dotcucumber features/.cucumber
+#@post,@administration
+#@tenants_home_page
+default: --color --format pretty --format html -o report\cclom_cucumber_features_test_results.html
+
+#default: --tags @login,@business_analysis_playbook_home_page_business_super_group,@logout --color --format pretty --format html -o cclom_cucumber_features_test_results.html
+#cclom_business: --tags @login,@business_analysis_playbook_home_page_business_super_group,@business_development_management_playbook_home_page_business_super_group,@business_operations_playbook_home_page_business_super_group,@consulting_playbook_home_page_business_super_group,@individual_contributor_playbook_home_page_business_super_group,@leadership_playbook_home_page_business_super_group,@management_services_playbook_home_page_business_super_group,@marcom_playbook_home_page_business_super_group,@product_management_playbook_home_page_business_super_group,@project_program_management_playbook_home_page_business_super_group,@logout --color --format pretty --format html -o cclom_business_super_group_test_results.html
+#demo_test_suite: -r features --tags @login,@four_quadrants_home_page,@logout --color --format pretty --format html -o cclom_cucumber_features_test_results.html --dotcucumber features/.cucumber
+#regression_suite: -r features --tags @login,@four_quadrants_home_page,@logout --color --format pretty --format html -o cclom_cucumber_features_test_results.html --dotcucumber features/.cucumber
+#json_reports: cucumber --format json -o cucumber.json
+# ci: -r features DISPLAY=:99.0 HEADLESS=true TRAVIS=true --tags ~@wip --format progress --format html -o cclom_cucumber_features_test_results.html --format junit -o junit

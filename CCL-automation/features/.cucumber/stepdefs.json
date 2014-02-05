@@ -1,0 +1,67 @@
+[
+  {
+    "source": "^I am on Cisco Collaborative Learning page$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/common/ccl_login_steps.rb:6",
+    "steps": [
+      {
+        "name": "I am on Cisco Collaborative Learning page",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Giving valid Username and Password$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/common/ccl_login_steps.rb:10",
+    "steps": [
+      {
+        "name": "Giving valid Username and Password",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicking on login Button$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/common/ccl_login_steps.rb:13",
+    "steps": [
+      {
+        "name": "Clicking on login Button",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on logout link",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/common/ccl_logout_steps.rb:5",
+    "steps": [
+      {
+        "name": "User clicks on logout link",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^We will get Main page",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/common/ccl_logout_steps.rb:8",
+    "steps": [
+      {
+        "name": "We will get Main page",
+        "args": [
+
+        ]
+      }
+    ]
+  }
+]

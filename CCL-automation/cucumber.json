@@ -1,0 +1,132 @@
+[
+  {
+    "comments": [
+      {
+        "value": "#Cisco Collaborative Learning file",
+        "line": 1
+      },
+      {
+        "value": "# Cucumber Automation by SRS Business Solution",
+        "line": 2
+      }
+    ],
+    "keyword": "Feature",
+    "name": "Login to the Cisco Collaborative Learning",
+    "line": 5,
+    "description": "  open the cisco collaborative Learning page\n  and give valid Login Credentials\n  then click login button.",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 4
+      }
+    ],
+    "id": "login-to-the-cisco-collaborative-learning",
+    "uri": "features\\ccl_features\\common\\ccl_login.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "TC001 - Login to Cisco Collaborative Learning",
+        "line": 10,
+        "description": "",
+        "id": "login-to-the-cisco-collaborative-learning;tc001---login-to-cisco-collaborative-learning",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on Cisco Collaborative Learning page",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/common/ccl_login_steps.rb:6"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `new' for \"..\\\\CCL-automation\\\\features\\\\scripts\\\\common\\\\Ccl_login_script\":String (NoMethodError)\n./features/scripts/common/generic_lib.rb:45:in `on_page'\n./features/step_definitions/common/ccl_login_steps.rb:7:in `/^I am on Cisco Collaborative Learning page$/'\nfeatures\\ccl_features\\common\\ccl_login.feature:11:in `Given I am on Cisco Collaborative Learning page'",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "Giving valid Username and Password",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/common/ccl_login_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Clicking on login Button",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/common/ccl_login_steps.rb:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "value": "# empty feature file",
+        "line": 1
+      }
+    ],
+    "keyword": "Feature",
+    "name": "Logout from the Cisco Collaborative Learning",
+    "line": 3,
+    "description": "    user want to click on Logout",
+    "tags": [
+      {
+        "name": "@logout",
+        "line": 2
+      }
+    ],
+    "id": "logout-from-the-cisco-collaborative-learning",
+    "uri": "features\\ccl_features\\common\\ccl_logout.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "TC002 - Logout the Cisco Collaborative Learning",
+        "line": 6,
+        "description": "",
+        "id": "logout-from-the-cisco-collaborative-learning;tc002---logout-the-cisco-collaborative-learning",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "User clicks on logout link",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/common/ccl_logout_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `button' for nil:NilClass (NoMethodError)\n./features/scripts/common/generic_lib.rb:131:in `button_click'\n./features/scripts/common/ccl_logout_script.rb:14:in `logout'\n./features/step_definitions/common/ccl_logout_steps.rb:6:in `/^User clicks on logout link/'\nfeatures\\ccl_features\\common\\ccl_logout.feature:7:in `When User clicks on logout link'",
+              "duration": 10031297000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "We will get Main page",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/common/ccl_logout_steps.rb:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
